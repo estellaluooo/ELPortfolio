@@ -1443,10 +1443,6 @@ body {
     .events-masonry {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .masonry-column:nth-child(3) {
-        display: none;
-    }
 }
 
 @media (max-width: 600px) {
@@ -1454,13 +1450,32 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .masonry-column:nth-child(2),
-    .masonry-column:nth-child(3) {
-        display: none;
+    .masonry-column {
+        display: flex;
     }
 
-    .masonry-column:first-child {
+    /* Flatten masonry columns into single column on mobile */
+    .events-masonry {
         display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .masonry-column {
+        display: contents;
+    }
+
+    .event-item {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .event-item img {
+        width: 100%;
+        height: auto;
+        max-height: none;
     }
 }
 
