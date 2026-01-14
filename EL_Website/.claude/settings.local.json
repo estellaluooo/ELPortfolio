@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f in *.png)",
+      "Bash(do echo \"File: $f\")",
+      "Bash(done)",
+      "Bash(ffmpeg:*)",
+      "Bash(pdftoppm:*)",
+      "Bash(ffprobe:*)"
+    ]
+  }
+}

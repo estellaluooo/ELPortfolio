@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL Portfolio - Creative Director & Storyteller</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600&family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">EL</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hero-fullbleed">
+        <div class="hero-background" style="background-image: url('assets/images/hero/hero-background.jpg');"></div>
+        <div class="hero-panel">
+            <div class="hero-panel-content">
+                <h1 class="hero-name">Estella Kexin Luo</h1>
+                <p class="hero-bio">
+                    I turn ideas into scalable brands through strategy, storytelling, and growth systems.
+                </p>
+                <div class="hero-expertise">
+                    <span class="expertise-label">Expertise:</span>
+                    <p class="expertise-list">Brand Strategy • Positioning • Storytelling • Go-to-Market Planning • Growth Marketing • Location Scouting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work Overview Section -->
+    <section id="work" class="section work-overview-section">
+        <div class="container">
+            <h2 class="work-overview-title">My Work</h2>
+
+            <div class="work-cards-container">
+                <!-- Event Card -->
+                <a href="events.html" class="work-card-elegant">
+                    <span class="work-card-number">01</span>
+                    <h3 class="work-card-title">Event Planning</h3>
+                    <p class="work-card-desc">Curate experiences that connect communities and ideas.</p>
+                    <div class="work-card-details">
+                        <p class="work-card-label">Case Study:</p>
+                        <ul class="work-card-list">
+                            <li>Accent Sisters Bookstore</li>
+                        </ul>
+                    </div>
+                    <span class="work-card-arrow">&rarr;</span>
+                </a>
+
+                <!-- Campaign Card -->
+                <a href="brand.html" class="work-card-elegant">
+                    <span class="work-card-number">02</span>
+                    <h3 class="work-card-title">Brand Campaigns</h3>
+                    <p class="work-card-desc">Execute large-scale activations and experiential marketing.</p>
+                    <div class="work-card-details">
+                        <p class="work-card-label">Case Study:</p>
+                        <ul class="work-card-list">
+                            <li>UGREEN × 2025 NYC Marathon Expo</li>
+                        </ul>
+                    </div>
+                    <span class="work-card-arrow">&rarr;</span>
+                </a>
+
+                <!-- Film Card -->
+                <a href="film.html" class="work-card-elegant">
+                    <span class="work-card-number">03</span>
+                    <h3 class="work-card-title">Film & Video</h3>
+                    <p class="work-card-desc">Direct, shoot, and edit visual stories.</p>
+                    <div class="work-card-details">
+                        <p class="work-card-label">Includes:</p>
+                        <ul class="work-card-list">
+                            <li>Documentary reel</li>
+                            <li>Narrative remake reel</li>
+                            <li>Pitch deck & lookbook</li>
+                            <li>Original scripts</li>
+                        </ul>
+                    </div>
+                    <p class="work-card-roles">Director, Cinematographer, Editor, Screenwriter</p>
+                    <span class="work-card-arrow">&rarr;</span>
+                </a>
+
+                <!-- Writing Card -->
+                <a href="writing.html" class="work-card-elegant">
+                    <span class="work-card-number">04</span>
+                    <h3 class="work-card-title">Writing</h3>
+                    <p class="work-card-desc">Communicate with precision across disciplines.</p>
+                    <div class="work-card-details">
+                        <p class="work-card-label">Includes:</p>
+                        <ul class="work-card-list">
+                            <li>Legal writing</li>
+                            <li>Academic papers & research posters</li>
+                            <li>Journals & essays</li>
+                        </ul>
+                    </div>
+                    <span class="work-card-arrow">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Contact</h2>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:estellaluo0219@gmail.com">estellaluo0219@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 EL Portfolio. Crafted with creativity and code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
